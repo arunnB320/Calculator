@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.2/math.min.js"></script>
+    <div class="main">
+        <div class="userInput"><input type="text" id="display" placeholder="0"></div>
+        <div class="btn">
+            <span>
+            <button  value="1" onclick = "appendValue('1')">1</button>
+            <button   value="2" onclick = "appendValue('2')">2</button>
+            <button  value="3" onclick = "appendValue('3')">3</button>
+            <button  value="+" onclick = "appendValue('+')">+</button>
+            </span>
+            <span>
+            <button  value="4" onclick = "appendValue('4')">4</button>
+            <button  value="5" onclick = "appendValue('5')">5</button>
+            <button  value="6" onclick = "appendValue('6')">6</button>
+            <button  value="-" onclick = "appendValue('-')">-</button>
+            </span>
+            <span>
+            <button  value="7" onclick = "appendValue('7')">7</button>
+            <button  value="8" onclick = "appendValue('8')">8</button>
+            <button  value="9" onclick = "appendValue('9')">9</button>
+            <button  value="*" onclick = "appendValue('*')">*</button>
+            </span>
+            <span>
+            <button style="background-color: orangered;" onclick="Equal()">=</button>
+            <button  value="0" style="background-color: orangered;" onclick = "appendValue('0')">0</button>
+            <button style="background-color: orangered;" onclick="Clear()">AC</button>
+            <button  value="/" style="background-color: orangered;" onclick="appendValue('/')">/</button>
+            </span>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
